@@ -1,0 +1,84 @@
+*{
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+.container{
+	width:  100%;
+}
+
+nav.menu{
+	background-color:  black;
+	color:  white;
+	padding-top: .7em;
+	padding-bottom: .7em;
+	display: flex;
+	width:  100%;
+	position: relative;
+
+}
+
+.logo{
+	width:  5%;
+}
+
+nav.menu a{
+	color:  white;
+	text-decoration: none;
+	padding: .3em;
+
+}
+
+.nav-links{
+	display:  flex;
+	list-style-type:  none;
+	width:  95%;
+
+}
+
+li.nav-item + li.nav-item{
+	margin-left:  .7em;
+}
+
+li.nav-item{
+	padding: .3em;
+}
+
+ul.nav-links>li.nav-item:last-child{
+	margin-left:  auto;
+	margin-right: .6em;
+	border: 1px solid black;
+	background-color: grey;
+	
+}
+
+.toggle {
+	position:  absolute;
+	right:  0;
+	left: 85%;
+	top: 20%;
+	bottom: 20%;
+}
+
+.toggle-btn {
+	background-color: green;
+	padding: .3em;
+	position: absolute;
+	top: 0;
+	/* bottom:  0; */
+	left: 0;
+	right: 45%;
+	cursor: pointer;
+}
+
+.toggle-btn.right {
+	background-color: rgb(224, 40, 40);
+	transition: all 0.5s ease-in-out;
+}
+
+.toggle-btn.left {
+	transition: all 0.5s ease-in-out;
+}
+
+
